@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nombre": "Almendras",
+    "precio1": 1350,
+    "precio2": 1200,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Frutos secos",
+    "img": "assets/img/almendras.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Nueces",
+    "precio1": 1250,
+    "precio2": 1100,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Frutos secos",
+    "img": "assets/img/nueces.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Avellanas",
+    "precio1": 1150,
+    "precio2": 900,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Frutos secos",
+    "img": "assets/img/avellanas.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Castañas de Cajú",
+    "precio1": 1650,
+    "precio2": 1400,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Frutos secos",
+    "img": "assets/img/castañascaju.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Pasas de Uva",
+    "precio1": 500,
+    "precio2": 350,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Frutos secos",
+    "img": "assets/img/pasas.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Maní Salado",
+    "precio1": 550,
+    "precio2": 400,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Frutos secos",
+    "img": "assets/img/mani.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Chocolate Amargo",
+    "precio1": 950,
+    "precio2": 800,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Chocolates",
+    "img": "assets/img/chocolates.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Cereales con chocolate",
+    "precio1": 750,
+    "precio2": 600,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Chocolates",
+    "img": "assets/img/cereales.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Bombones de chocolate",
+    "precio1": 1100,
+    "precio2": 950,
+    "cantidad": 1,
+    "pesaje": "xkg",
+    "categoria": "Chocolates",
+    "img": "assets/img/bombones.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Dulce de Leche",
+    "precio1": 700,
+    "precio2": 550,
+    "cantidad": 1,
+    "pesaje": "xud",
+    "categoria": "Dulce de Leche",
+    "img": "assets/img/dulce2.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Vino Tinto Malbec",
+    "precio1": 600,
+    "precio2": 450,
+    "cantidad": 1,
+    "pesaje": "xud",
+    "categoria": "Vinos",
+    "img": "assets/img/vinotinto.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Vino Blanco Dulce",
+    "precio1": 600,
+    "precio2": 450,
+    "cantidad": 1,
+    "pesaje": "xud",
+    "categoria": "Vinos",
+    "img": "assets/img/vinoblanco.jpg"
+  }
+]

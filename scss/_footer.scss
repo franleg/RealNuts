@@ -1,0 +1,64 @@
+.contenedor-footer {
+    font-family: Faustina;
+    margin-top: 120px;
+    padding-bottom: 20px;
+    background-color: #3f3f3f;
+    color: #f1f1f1;
+    .contenedor-redes{
+        margin: 60px 0 60px 0;
+        .redes-icono {
+            cursor: pointer;
+            font-size: 26px;
+            padding: 8px;
+        }
+    }
+    .contacto-hr{
+        background: #E8E8E8;
+        margin-right: 140px;
+        margin-left: 140px;
+        margin-bottom: 40px;
+        @media only screen and (max-width:767px){
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+    }
+    .contenedor-datos{
+        margin-bottom: 60px;
+        @media only screen and (max-width:767px){
+            margin-bottom: 10px;
+        }
+        .datos {
+            @media only screen and (max-width:767px){
+                padding: 20px;
+            }
+        }
+    }
+    .contenedor-newsletter-copyright{
+        padding: 40px 20px 50px 20px;
+        @media only screen and (max-width:767px){
+            padding: 20px 20px 30px 20px;
+        }  
+        .contenedor-newsletter {
+            @media only screen and (max-width:767px){
+                padding-bottom: 50px;
+            }   
+            .newsletter-input{
+                font-size: 16px;
+                @media only screen and (max-width:767px){
+                    width: 130px;
+                }   
+            }
+            .newsletter-submit {
+                font-size: 16px;
+            }        
+        }
+        .contenedor-copyright{
+            h6{
+                @media only screen and (max-width:767px){
+                    font-size: 14px;
+                }                  
+            }    
+        }
+    }
+}

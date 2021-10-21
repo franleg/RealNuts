@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de frutos secos, chocolates, dulce de leches y vinos de la mejor calidad, al mejor precio.">
+    <meta name="keywords"  content="DIETETICA, ALMACEN, FRUTOS SECOS, ALMENDRAS, NUECES, AVELLANAS, CASTAÑAS DE CAJU, PASAS DE UVA, MANI SALADO, CHOCOLATES, CHOCOLATE AMARGO, CEREALES CON CHOCOLATE, BOMBONES DE CHOCOLATE, DULCE DE LECHE, VINOS, VINO TINTO MALBEC, VINO BLANCO DULCE">     
+    <title>RealNuts</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> <!-- CSS Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS propio --> 
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body> 
+  <!-- Nav -->
+  <div class="container-fluid sticky-top navBar">
+    <div class="row barraNav">
+      <div class="col-lg-12 col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light barraNav d-flex justify-content-between">
+          <div class="buscar d-flex justify-content-start">
+            <button id="botonMenu"><i class="fas fa-bars"></i></button>
+          </div>            
+          <div class="d-flex justify-content-center">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Logo" id="logo"></a>
+          </div>  
+          <div class="d-flex justify-content-end">
+            <button id="botonCarrito"><i class="fas fa-shopping-cart carrito"></i></button>
+            <span id="contador-carrito">0</span>
+          </div>           
+        </nav>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Slider -->
+  <div id="contenedor-slider" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/slider1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/slider2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/slider4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Titulo -->
+  <div id="contenedor-titulo" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h1 class="titulo d-flex justify-content-center">Bienvenido a Real Nuts</h1>
+        <hr id="hrTitulo">
+      </div> 
+    </div>
+  </div> 
+
+  <!-- Categorías -->
+  <div id="contenedor-categorias" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h2 class="tituloProductos text-center">Nuestros Productos</h2>
+        <h2 class="tituloCategorias text-center">Categorías</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selector -->    
+  <div id="contenedor-selector" class="container-fluid">
+    <div class="row">
+      <div class="selector col-lg-12 col-xs-12 d-flex justify-content-center">
+        <select id="select" class="select-css text-center">
+          <option value="#all">Todos</option>
+          <option value="#titulo-frutos">Frutos Secos</option>
+          <option value="#titulo-chocolates">Chocolates</option>
+          <option value="#titulo-dulces">Dulce de Leche</option>
+          <option value="#titulo-vinos">Vinos</option>
+        </select>
+      </div> 
+    </div>
+  </div>
+    
+  <!-- Productos -->
+  <div id="contenedor-productos" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 text-center">
+        <h3 id="titulo-frutos" class="titulo-producto">Frutos Secos</h3>
+      </div>
+    </div>
+    <div id="contenedor-frutos" class="row d-flex justify-content-center">
+        
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 text-center">
+        <h3 id="titulo-chocolates" class="titulo-producto">Chocolates</h3>
+      </div>
+    </div>
+    <div id="contenedor-chocolates" class="row d-flex justify-content-center">
+        
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 text-center">
+        <h3 id="titulo-dulces" class="titulo-producto">Dulce de Leche</h3>
+      </div>
+    </div>
+    <div id="contenedor-dulces" class="row d-flex justify-content-center">
+        
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 text-center">
+        <h3 id="titulo-vinos" class="titulo-producto">Vinos</h3>
+      </div>
+    </div>
+    <div id="contenedor-vinos" class="row d-flex justify-content-center">
+        
+    </div>
+  </div>    
+
+  <!-- Menu -->
+  <div class="contenedor-menu">
+    <div class="menu">
+      <div class="cerrarMenu">
+        <i class="fas fa-times"></i>
+      </div>
+      <div id="contenedor-buscar">
+        <input id="input-buscar" type="text" name="search" placeholder="Buscar producto">
+        <button id="boton-buscar"><i class="buscador fas fa-search"></i></buttom>
+      </div>
+      <div class="contenedor-lista">
+        <ul class="lista">
+          <li class="lista-item">
+            <div class="menu-inicio">
+              <a href="index.html"><b>Inicio</b></a>
+            </div>
+          </li>
+          <li class="lista-item">
+            <div class="menu-productos d-flex justify-content-between align-items-baseline">
+              <a href="#"><b>Productos</b></a>
+              <i class="flecha fas fa-angle-right"></i>
+            </div>
+            <ul class="lista-productos">
+              <li class="item-producto">
+                <a href="#">Todos los productos</a>
+              </li>              
+              <li class="item-producto">
+                <a href="#">Frutos Secos</a>
+              </li>
+              <li class="item-producto">
+                <a href="#">Chocolates</a>
+              </li>
+              <li class="item-producto">
+                <a href="#">Dulce de leche</a>
+              </li> 
+              <li class="item-producto">
+                <a href="#">Vinos</a>
+              </li>                                         
+            </ul>
+          </li>
+          <li class="lista-item">
+            <div class="menu-contacto">
+              <a href="#" id="contacto"><b>Contacto</b></a>
+            </div>
+          </li>          
+        </ul>
+      </div>    
+    </div> 
+  </div>  
+
+  <!-- Carrito -->
+  <div class="contenedorCarrito">
+    <div class="contenedor-carrito">
+      <div class="cerrar-carrito">
+        <i class="fas fa-times"></i>
+      </div>
+      <div>
+        <h1 class="titulo-carrito text-center">Carrito de Compras</h1>
+      </div>
+      <div id="carrito">
+
+      </div>
+      <hr class="hr-carrito">
+      <div class="contenedor-total">
+        <p id="precio-total" class="d-flex justify-content-between">
+        </p>
+      </div>
+      <div class="text-center">
+        <p id="verMas">Ver mas productos</p>
+        <button id="botonFinalizar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmación de Compra -->
+  <div class="contenedor-formulario text-center">
+    <div class="contenedor-modal">
+      <h2 class="titulo-modal">¡Muchas gracias por su compra!</h2>
+      <p class="parrafo-modal">Su compra se ha realizado exitosamente</p>
+      <button class="boton-modal">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="contenedor-footer container-fluid text-center">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 contenedor-redes">
+        <h5>REDES SOCIALES</h5>
+          <i class="fab fa-facebook-f redes-icono"></i>
+          <i class="fab fa-instagram redes-icono"></i>
+      </div>
+    </div>
+    <div id="contenedor-contacto" class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h5>CONTACTO</h5>
+        <hr class="contacto-hr">
+      </div>
+    </div>
+    <div class="row contenedor-datos">
+      <div class="col-lg-4 col-xs-12 datos">
+        <i class="fas fa-phone-alt"></i>
+        <h6>+54 9 11-3902-5840</h6>
+      </div>
+      <div class="col-lg-4 col-xs-12 datos">
+        <i class="fas fa-map-marker-alt"></i>
+        <h6>Villa Ballester, Buenos Aires, Argentina</h6>
+      </div>  
+      <div class="col-lg-4 col-xs-12 datos">
+        <i class="far fa-envelope"></i>
+        <h6>realnuts@hotmail.com</h6>
+      </div>
+    </div>
+    <div class="row contenedor-newsletter-copyright"> 
+      <div class="col-lg-6 col-xs-12 contenedor-newsletter">
+          <h5>Newsletter:
+            <input type="email" placeholder="E-MAIL" class="newsletter-input">
+            <input type="submit" value="ENVIAR" class="newsletter-submit">
+          </h5>
+      </div>         
+      <div class="col-lg-6 col-xs-12 contenedor-copyright">
+        <h6>© 2021 RealNuts, todos los derechos reservados</h6>
+      </div>              
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h6 style="font-style: italic; font-size: 14px;">Creado por Franco Legnazzi</h6>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/globales.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+  

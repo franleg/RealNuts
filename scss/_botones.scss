@@ -1,0 +1,13 @@
+.boton{
+	background: #fff;
+	color: #3f3f3f;
+	border: 1px solid #b2b2b2;
+	font-size: 18px;
+	padding: 6px;
+	transition: all 0.5s ease;
+	&:hover {
+		background: #3f3f3f;
+		color: #fff;
+		border: 1px solid #3f3f3f;
+	}
+}

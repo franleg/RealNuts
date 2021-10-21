@@ -1,0 +1,24 @@
+.navBar {
+	z-index: 2;
+	padding: 0;
+}
+
+.barraNav {
+	margin: 0;
+	background-color:#fff;
+  	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+	position: relative;
+	left: 12px;
+	padding: {
+		top: 2px;
+		bottom: 2px;
+	}
+}
+
+.menuBar {
+	padding: 10px 30px 10px 20px;
+	font-size: 24px;
+}
