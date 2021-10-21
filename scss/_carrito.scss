@@ -39,8 +39,8 @@
 
 .contenedor-carrito {
 	background-color: #fff;
-    width: 500px;
-    height: 100vh;
+    width: 400px;
+    height: 100%;
     position: fixed;
     right: -120%;
  	top: 0;
@@ -50,7 +50,7 @@
  	transition: 1s ease;
  	transition-property: right;
  	@media only screen and (max-width: 767px){
- 		width: 380px;
+ 		width: 420px;
  	}
 	.cerrar-carrito {
 		font-size: 20px;
