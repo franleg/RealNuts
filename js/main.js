@@ -1,5 +1,6 @@
 $(".tituloProductos").hide();
 $(".tituloCategorias").hide();
+$("#formulario").hide();
 
 
 $(document).ready(function(){
@@ -50,6 +51,26 @@ $(document).ready(function(){
         $(".contenedorCarrito").removeClass("active");
 
     });
+
+    $("#botonIniciar").click(function(e) {
+        e.preventDefault();
+        $("#carrito").hide();
+        $(".hr-carrito").hide();
+        $(".contenedor-total").hide();
+        $("#verMas").hide();
+        $("#botonIniciar").hide();
+        $("#formulario").show();
+    });
+
+    $("#volver").click(function(e){
+        e.preventDefault();
+        $("#formulario").hide();
+        $("#carrito").show();
+        $(".hr-carrito").show();
+        $(".contenedor-total").show();
+        $("#verMas").show();
+        $("#botonIniciar").show();
+    })
 
     carritoVacio();
 });
@@ -123,6 +144,7 @@ $(".item-producto").click(function(e) {
     }
 });
 
+
 $("#contacto").click(function(e) {
     e.preventDefault();
     $(".menu").removeClass("active");
@@ -131,8 +153,10 @@ $("#contacto").click(function(e) {
         scrollTop: $("#contenedor-contacto").offset().top -8},2000);
 });
 
+
 $(".menu-productos").click(function(e) {
     e.preventDefault();
 });
+
 
 recuperar();

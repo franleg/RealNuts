@@ -7424,10 +7424,10 @@ body {
     color: #3f3f3f; }
     .contenedor-carrito #verMas:hover {
       color: #6a6a6a; }
-  .contenedor-carrito #botonFinalizar {
+  .contenedor-carrito #botonIniciar {
     position: relative;
     left: 8px;
-    margin: 30px 30px 20px 30px;
+    margin: 10px 30px 20px 30px;
     width: 80%; }
 
 .contenedor-carrito.active {
@@ -7484,6 +7484,23 @@ body {
     padding-left: 12px; }
     .contenedor-cantidad .contenedor-sumar .iconoSumar:hover {
       font-size: 14px; }
+
+#formulario {
+  margin: 20px; }
+
+#volver {
+  padding-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #3f3f3f; }
+  #volver:hover {
+    color: #6a6a6a; }
+
+#botonFinalizar {
+  position: relative;
+  left: 4px;
+  margin: 30px 30px 20px 30px;
+  width: 80%; }
 
 #contenedor-buscar {
   margin-top: 55px; }

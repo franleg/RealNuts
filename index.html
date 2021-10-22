@@ -204,10 +204,54 @@
       </div>
       <div class="text-center">
         <p id="verMas">Ver mas productos</p>
-        <button id="botonFinalizar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Finalizar Compra</button>
+        <button id="botonIniciar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Iniciar Compra</button>
+      </div>
+      <div id="formulario">
+        <div class="contacto__formulario">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1" class="contacto__formulario--titulo">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput2" class="contacto__formulario--titulo">Apellido</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu apellido">
+            </div>          
+            <div class="form-group">
+              <label for="exampleFormControlInput3" class="contacto__formulario--titulo">E-mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput5" class="contacto__formulario--titulo">Telefono</label>
+              <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Escribe tu telefono">
+            </div>             
+            <div class="form-group">
+                <label for="exampleFormControlInput4" class="contacto__formulario--titulo">Numero de Tarjeta</label>
+                <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Ingrese tu número de tarjeta">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput2" class="contacto__formulario--titulo">Localidad</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu localidad">
+            </div>   
+            <div class="form-group">
+              <label for="exampleFormControlInput2" class="contacto__formulario--titulo">Direccion</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu dirección">
+            </div>          
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <div class="text-center">
+              <p id="volver">Seguir comprando</p>
+            </div>
+            <div class="text-center">
+              <button id="botonFinalizar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Confirmar Compra</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+
 
   <!-- Confirmación de Compra -->
   <div class="contenedor-formulario text-center">

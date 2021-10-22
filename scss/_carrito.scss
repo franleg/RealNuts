@@ -88,10 +88,10 @@
 			color: #6a6a6a;
 		}
 	}
-	#botonFinalizar {
+	#botonIniciar {
 		position: relative;
 		left: 8px;
-		margin: 30px 30px 20px 30px;
+		margin: 10px 30px 20px 30px;
 		width: 80%;
 	}
 }
@@ -174,14 +174,26 @@
 	}
 }
 
+#formulario {
+	margin: 20px;
+}
 
+#volver {
+	padding-top: 20px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #3f3f3f;
+	&:hover {
+		color: #6a6a6a;
+	}
+}
 
-
-
-
-
-
-
+#botonFinalizar {
+	position: relative;
+	left: 4px;
+	margin: 30px 30px 20px 30px;
+	width: 80%;
+}
 
 
 
