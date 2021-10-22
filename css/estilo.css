@@ -7352,17 +7352,17 @@ body {
 #botonCarrito {
   border: 0px;
   font-size: 24px;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-right: 5px; }
   #botonCarrito .carrito {
-    color: #3f3f3f;
-    padding-right: 10px; }
-  #botonCarrito:hover {
-    transform: scale(1.2, 1.2); }
+    color: #3f3f3f; }
+    #botonCarrito .carrito:hover {
+      transform: scale(1.2, 1.2); }
 
 #contador-carrito {
   font-size: 16px;
   position: relative;
-  right: 8px;
+  left: 5px;
   bottom: 14px; }
 
 .contenedorCarrito {
