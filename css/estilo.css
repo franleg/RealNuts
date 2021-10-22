@@ -7401,7 +7401,7 @@ body {
     font-size: 20px;
     position: absolute;
     right: 0;
-    margin: 20px;
+    margin: 10px;
     cursor: pointer; }
   .contenedor-carrito .titulo-carrito {
     font-size: 24px;
@@ -7549,7 +7549,7 @@ body {
   transition-property: left; }
   @media only screen and (max-width: 767px) {
     .menu {
-      width: 420px; } }
+      width: 320px; } }
 
 .contenedor-menu.active {
   opacity: 1;
@@ -7563,7 +7563,7 @@ body {
   font-size: 20px;
   position: absolute;
   right: 0;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer; }
 
 .lista {
