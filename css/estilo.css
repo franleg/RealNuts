@@ -7197,7 +7197,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #logo {
   position: relative;
-  left: 12px;
+  left: 16px;
   padding-top: 2px;
   padding-bottom: 2px; }
 
@@ -7550,7 +7550,7 @@ body {
   transition-property: left; }
   @media only screen and (max-width: 767px) {
     .menu {
-      width: 330px; } }
+      width: 350px; } }
 
 .contenedor-menu.active {
   opacity: 1;
