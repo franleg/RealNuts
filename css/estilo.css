@@ -7362,7 +7362,8 @@ body {
 #contador-carrito {
   font-size: 16px;
   position: relative;
-  right: 10px; }
+  right: 8px;
+  bottom: 14px; }
 
 .contenedorCarrito {
   position: fixed;
@@ -7549,7 +7550,7 @@ body {
   transition-property: left; }
   @media only screen and (max-width: 767px) {
     .menu {
-      width: 320px; } }
+      width: 330px; } }
 
 .contenedor-menu.active {
   opacity: 1;
