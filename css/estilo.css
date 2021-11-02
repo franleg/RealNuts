@@ -7228,7 +7228,7 @@ body {
   padding: 20px; }
   @media only screen and (max-width: 767px) {
     .tituloProductos {
-      font-size: 32px; } }
+      font-size: 38px; } }
 
 #hrTitulo {
   margin-left: 40px;
@@ -7240,7 +7240,7 @@ body {
   color: #3f3f3f; }
   @media only screen and (max-width: 767px) {
     .tituloCategorias {
-      font-size: 26px; } }
+      font-size: 24px; } }
 
 .titulo-producto {
   font-size: 42px;
@@ -7249,7 +7249,7 @@ body {
   padding-top: 80px; }
   @media only screen and (max-width: 767px) {
     .titulo-producto {
-      font-size: 30px; } }
+      font-size: 34px; } }
 
 .selector {
   margin-top: 10px;

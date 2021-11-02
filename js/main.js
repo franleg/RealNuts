@@ -88,7 +88,7 @@ $(window).on("load",function(){
                             $(".tituloCategorias").fadeIn(3000);
                         });
     }if(window.screen.width < 767){
-        $(".titulo").animate({fontSize:"40px"},
+        $(".titulo").animate({fontSize:"48px"},
                         "slow", 
                         function(){
                             $(".tituloProductos").fadeIn(1500);
