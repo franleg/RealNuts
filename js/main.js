@@ -120,25 +120,25 @@ $(".item-producto").click(function(e) {
             $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
             $("html, body").animate({
-                scrollTop: $("#titulo-frutos").offset().top -30},2000)
+                scrollTop: $("#titulo-frutos").offset().top -75},2000)
             break;
         case "Chocolates":
             $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
             $("html, body").animate({
-                scrollTop: $("#titulo-chocolates").offset().top -30},2000)
+                scrollTop: $("#titulo-chocolates").offset().top -75},2000)
             break;
         case "Dulce de leche":
             $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
             $("html, body").animate({
-                scrollTop: $("#titulo-dulces").offset().top -30},2000)
+                scrollTop: $("#titulo-dulces").offset().top -75},2000)
             break;
         case "Vinos":
             $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
             $("html, body").animate({
-                scrollTop: $("#titulo-vinos").offset().top -30},2000)
+                scrollTop: $("#titulo-vinos").offset().top -75},2000)
             break;
     
         default:
