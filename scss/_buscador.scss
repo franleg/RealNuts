@@ -31,3 +31,14 @@
 		transform: scale(1.2,1.2);
 	}
 }
+
+#atras {
+	text-decoration: none !important;
+	padding-top: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #3f3f3f;
+	&:hover {
+		color: #6a6a6a;
+	}
+}

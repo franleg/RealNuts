@@ -1,12 +1,7 @@
 function mostrarProductos(productos, contenedor) {
 	for (const producto of productos) {
-		$(contenedor).append(`<div class="col-lg-4 col-xs-6 contenedor-cards">
+		$(contenedor).append(`<div class="col-lg-4 col-xs-12 contenedor-cards">
 									<div class="card card-productos">
-										<div class="text-center loader">
-											<div class="spinner-border" role="status">
-											<span class="sr-only">Loading...</span>  
-											</div>
-										</div>
 										<img src="${producto.img}" class="card-img-top img-cards img-fluid">
 										<div class="card-body text-center">
 											<h3 class="card-title">${producto.nombre}</h3>
@@ -19,16 +14,9 @@ function mostrarProductos(productos, contenedor) {
 										</div>
 									</div>
 								</div>`)
-        $(".img-cards").on("load", function() {
-            $(this).css({"display":"none"});
-            setTimeout(() => {
-                $(this).css({"display":"block"});
-                $(".loader").css({"display":"none"});
-            }, 2000);
-          })
 		$(`#boton${producto.id}`).click(()=>{
 			agregarAlCarrito(producto.id);
-			$("#botonFinalizar").show();
+			$("#botonIniciar").show();
 			Toastify({
 			  text: "Producto Agregado",
 			  gravity: "bottom",
@@ -115,7 +103,7 @@ function mostrarCarrito(productos){
 			}).showToast();	
 		});						
 	}
-	$("#botonFinalizar").on("click", finalizarCompra);
+	$("#botonConfirmar").on("click", finalizarCompra);
 }
 
 
@@ -137,7 +125,10 @@ function buscar(event) {
     mostrarProductos(buscados, $("#contenedor-productos"));
 	console.log(buscados)
     if (textoIngresado == "" || buscados.length == 0){
-    	$("#contenedor-productos").html(`<p class="text-center"><b>No se ha encontrado el producto</b></p>`)
+    	$("#contenedor-productos").html(`<div class="text-center">
+											<p><b>No se ha encontrado el producto</b></p>
+											<a href="index.html" id="atras">Volver</a>
+										</div>`)
     }
 }
 
@@ -170,11 +161,12 @@ function finalizarCompra() {
 	});
   }
 
-  
+
 function carritoVacio(){
 	if(carrito == 0){
 		$("#carrito").append(`<p class="text-center">El carrito de compras está vacío</p>`)
 		$("#precio-total").empty();
+		$("#botonIniciar").hide();
 	}
 }
   

@@ -207,46 +207,51 @@
         <button id="botonIniciar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Iniciar Compra</button>
       </div>
       <div id="formulario">
-        <div class="contacto__formulario">
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1" class="contacto__formulario--titulo">Nombre</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu nombre">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlInput2" class="contacto__formulario--titulo">Apellido</label>
-              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu apellido">
-            </div>          
-            <div class="form-group">
-              <label for="exampleFormControlInput3" class="contacto__formulario--titulo">E-mail</label>
-              <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlInput5" class="contacto__formulario--titulo">Telefono</label>
-              <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Escribe tu telefono">
-            </div>             
-            <div class="form-group">
-                <label for="exampleFormControlInput4" class="contacto__formulario--titulo">Numero de Tarjeta</label>
-                <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Ingrese tu número de tarjeta">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlInput2" class="contacto__formulario--titulo">Localidad</label>
-              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu localidad">
-            </div>   
-            <div class="form-group">
-              <label for="exampleFormControlInput2" class="contacto__formulario--titulo">Direccion</label>
-              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Escribe tu dirección">
-            </div>          
-            <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje"></textarea>
-            </div>
-            <div class="text-center">
-              <p id="volver">Seguir comprando</p>
-            </div>
-            <div class="text-center">
-              <button id="botonFinalizar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Confirmar Compra</button>
-            </div>
-          </form>
+        <form id="form" class="form" action="">
+          <div class="form-group">
+            <label for="nombre" class="formulario-titulo">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>
+          </div>
+          <div class="form-group">
+            <label for="apellido" class="formulario-titulo">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Escribe tu apellido">   
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>       
+          </div>          
+          <div class="form-group">
+            <label for="email" class="formulario-titulo">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">   
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>       
+          </div>
+          <div class="form-group">
+            <label for="telefono" class="formulario-titulo">Telefono</label>
+            <input type="number" class="form-control" id="telefono" placeholder="Escribe tu telefono">    
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>      
+          </div>             
+          <div class="form-group">
+            <label for="tarjeta" class="formulario-titulo">Numero de Tarjeta</label>
+            <input type="number" class="form-control" id="tarjeta" placeholder="Ingrese tu número de tarjeta">  
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>       
+          </div>
+          <div class="form-group">
+            <label for="localidad" class="formulario-titulo">Localidad</label>
+            <input type="text" class="form-control" id="localidad" placeholder="Escribe tu localidad">    
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>      
+          </div>   
+          <div class="form-group">
+            <label for="direccion" class="formulario-titulo">Direccion</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Escribe tu dirección">        
+            <small class="error">Por favor, complete este campo. <i class="fas fa-exclamation-circle"></i></small>
+          </div>          
+          <div class="form-group">
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+        </form>  
+        <div class="text-center">
+          <p id="volver">Seguir comprando</p>
+        </div>
+        <div class="text-center">
+          <button id="botonConfirmar" type="button" data-toggle="modal" data-target="#exampleModal" class="boton btn btn-secondary btn-lg btn-block">Confirmar Compra</button>
         </div>
       </div>
     </div>

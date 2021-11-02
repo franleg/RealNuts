@@ -1,9 +1,30 @@
-$(".tituloProductos").hide();
-$(".tituloCategorias").hide();
-$("#formulario").hide();
-
-
 $(document).ready(function(){
+    $(".tituloProductos").hide();
+
+    $(".tituloCategorias").hide();
+
+    $("#formulario").hide();
+
+    $(".error").hide();
+
+    $("#botonConfirmar").click(function(){
+        let nombre = $("#nombre").val().trim();
+        let apellido = $("#apellido").val().trim();
+        let email = $("#email").val().trim();
+        let telefono = $("#telefono").val().trim();
+        let tarjeta = $("#tarjeta").val().trim();
+        let localidad = $("#localidad").val().trim();
+        let direccion = $("#direccion").val().trim();
+        if (nombre.length == 0 || apellido.length == 0 || email.length == 0 || telefono.length == 0 || tarjeta.length == 0 || localidad.length == 0 || direccion.length == 0){
+            $(".error").show();
+            return;
+        }else {
+            $(".error").hide();
+            $(".contenedor-formulario").addClass("active");
+            $(".contenedor-carrito").removeClass("active");           
+        }
+    });
+
     $("#botonCarrito").click(function(){
         $(".contenedor-carrito").addClass("active");
         $(".contenedorCarrito").addClass("active");
@@ -40,11 +61,6 @@ $(document).ready(function(){
         $(".contenedor-carrito").removeClass("active"); 
         $(".contenedorCarrito").removeClass("active");
     })
-
-    $("#botonFinalizar").click(function(){
-        $(".contenedor-formulario").addClass("active");
-        $(".contenedor-carrito").removeClass("active");
-    });
 
     $(".boton-modal").click(function(){
         $(".contenedor-formulario").removeClass("active");
@@ -160,3 +176,5 @@ $(".menu-productos").click(function(e) {
 
 
 recuperar();
+
+

@@ -7305,7 +7305,7 @@ body {
   flex-wrap: nowrap; }
 
 .card-productos {
-  margin: 30px;
+  margin: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease; }
   .card-productos:hover {
@@ -7496,7 +7496,7 @@ body {
   #volver:hover {
     color: #6a6a6a; }
 
-#botonFinalizar {
+#botonConfirmar {
   position: relative;
   left: 4px;
   margin: 30px 30px 20px 30px;
@@ -7530,6 +7530,15 @@ body {
   font-size: 18px; }
   .buscador:hover {
     transform: scale(1.2, 1.2); }
+
+#atras {
+  text-decoration: none !important;
+  padding-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3f3f3f; }
+  #atras:hover {
+    color: #6a6a6a; }
 
 #botonMenu {
   font-size: 24px;
@@ -7619,6 +7628,13 @@ body {
 
 .rotar {
   transform: rotate(90deg); }
+
+.formulario-titulo {
+  font-weight: bold;
+  color: #3f3f3f; }
+
+.form-group small {
+  color: #e74c3c; }
 
 .contenedor-formulario {
   position: fixed;
