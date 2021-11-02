@@ -1,4 +1,4 @@
- .contenedor-formulario{
+ .contenedor-compra{
     position: fixed;
     top: 0;
     left: 0;
@@ -46,7 +46,7 @@
     }
 }
 
-.contenedor-formulario.active{
+.contenedor-compra.active{
     opacity: 1;
     pointer-events: unset;
     transition: opacity .6s;

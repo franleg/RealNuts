@@ -103,7 +103,6 @@ function mostrarCarrito(productos){
 			}).showToast();	
 		});						
 	}
-	$("#botonConfirmar").on("click", finalizarCompra);
 }
 
 
@@ -170,3 +169,43 @@ function carritoVacio(){
 	}
 }
   
+
+function validar() {
+	$(".error").hide();
+
+	let nombre = $("#nombre").val().trim();
+	let apellido = $("#apellido").val().trim();
+	let email = $("#email").val().trim();
+	let telefono = $("#telefono").val().trim();
+	let tarjeta = $("#tarjeta").val().trim();
+	let localidad = $("#localidad").val().trim();
+	let direccion = $("#direccion").val().trim();
+	
+	if (nombre.length == 0 ){
+		$("#error-nombre").show();
+	};
+	if (apellido.length == 0 ){
+		$("#error-apellido").show();
+	};
+	if (email.length == 0 ){
+		$("#error-email").show();	
+	};
+	if (telefono.length === 0){
+		$("#error-telefono").show();	
+	};
+	if (tarjeta.length == 0){
+		$("#error-tarjeta").show();	
+	};
+	if (localidad.length == 0 ){
+		$("#error-localidad").show();	
+	};
+	if (direccion.length == 0 ){
+		$("#error-direccion").show();
+	};
+	if (nombre.length > 0 && apellido.length > 0 && email.length > 0 && telefono.length >= 0 && tarjeta.length > 0 && localidad.length > 0 && direccion.length > 0) {
+		$(".error").hide();
+		$(".contenedor-compra").addClass("active");
+		$(".contenedor-carrito").removeClass("active");
+		finalizarCompra();  	
+	}							
+}

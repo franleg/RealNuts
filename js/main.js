@@ -7,22 +7,9 @@ $(document).ready(function(){
 
     $(".error").hide();
 
-    $("#botonConfirmar").click(function(){
-        let nombre = $("#nombre").val().trim();
-        let apellido = $("#apellido").val().trim();
-        let email = $("#email").val().trim();
-        let telefono = $("#telefono").val().trim();
-        let tarjeta = $("#tarjeta").val().trim();
-        let localidad = $("#localidad").val().trim();
-        let direccion = $("#direccion").val().trim();
-        if (nombre.length == 0 || apellido.length == 0 || email.length == 0 || telefono.length == 0 || tarjeta.length == 0 || localidad.length == 0 || direccion.length == 0){
-            $(".error").show();
-            return;
-        }else {
-            $(".error").hide();
-            $(".contenedor-formulario").addClass("active");
-            $(".contenedor-carrito").removeClass("active");           
-        }
+    $("#botonConfirmar").on('click',function(){
+        console.log('form');
+        validar()   
     });
 
     $("#botonCarrito").click(function(){
@@ -63,7 +50,7 @@ $(document).ready(function(){
     })
 
     $(".boton-modal").click(function(){
-        $(".contenedor-formulario").removeClass("active");
+        $(".contenedor-compra").removeClass("active");
         $(".contenedorCarrito").removeClass("active");
 
     });

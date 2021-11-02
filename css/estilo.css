@@ -7636,7 +7636,7 @@ body {
 .form-group small {
   color: #e74c3c; }
 
-.contenedor-formulario {
+.contenedor-compra {
   position: fixed;
   top: 0;
   left: 0;
@@ -7649,7 +7649,7 @@ body {
   transition: opacity .6s .9s;
   --transform: translateY(-100vh);
   --transition: transform .8s; }
-  .contenedor-formulario .contenedor-modal {
+  .contenedor-compra .contenedor-modal {
     margin: auto;
     width: 90%;
     max-width: 600px;
@@ -7663,9 +7663,9 @@ body {
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition); }
-    .contenedor-formulario .contenedor-modal .parrafo-modal {
+    .contenedor-compra .contenedor-modal .parrafo-modal {
       font-size: 18px; }
-    .contenedor-formulario .contenedor-modal .boton-modal {
+    .contenedor-compra .contenedor-modal .boton-modal {
       color: #fff;
       font-size: 20px;
       background-color: #3f3f3f;
@@ -7675,11 +7675,11 @@ body {
       display: inline-block;
       font-weight: 300;
       transition: background-color .3s; }
-      .contenedor-formulario .contenedor-modal .boton-modal:hover {
+      .contenedor-compra .contenedor-modal .boton-modal:hover {
         color: #3f3f3f;
         background-color: #fff; }
 
-.contenedor-formulario.active {
+.contenedor-compra.active {
   opacity: 1;
   pointer-events: unset;
   transition: opacity .6s;
