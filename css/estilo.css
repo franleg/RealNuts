@@ -7427,7 +7427,7 @@ body {
   .contenedor-carrito #botonIniciar {
     position: relative;
     left: 8px;
-    margin: 20px 30px 20px 30px;
+    margin: 40px 30px 20px 30px;
     width: 80%; }
 
 .contenedor-carrito.active {
