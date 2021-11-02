@@ -1,17 +1,15 @@
-@import "fuentes";
-
 .titulo {
 	margin: {
 		top:50px;
 		bottom: 20px;
 	}
 	font-size: 0px;
-	font-family: $fuente3;
+	font-family: 'Staatliches';
 	color: #3f3f3f;
 }
 
 .tituloProductos {
-	font-family: $fuente1;
+	font-family: 'Acme';
 	font-weight: bold;
 	font-size: 42px;
 	color: #3f3f3f;
@@ -30,7 +28,7 @@
 
 .tituloCategorias {
 	font-size: 30px;
-	font-family: $fuente2;
+	font-family: 'Faustina';
 	color: #3f3f3f;
 	@media only screen and (max-width:767px) {
 		font-size: 26px;
@@ -39,7 +37,7 @@
 
 .titulo-producto {
 	font-size: 42px;
-	font-family: $fuente3;
+	font-family: 'Staatliches';
 	color: #3f3f3f;
 	padding-top: 80px;
 	@media only screen and (max-width:767px) {
