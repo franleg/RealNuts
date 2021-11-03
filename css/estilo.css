@@ -7365,7 +7365,7 @@ body {
   left: 5px;
   bottom: 14px; }
 
-.contenedorCarrito {
+.fondo-carrito {
   position: fixed;
   top: 0;
   left: 0;
@@ -7378,7 +7378,7 @@ body {
   pointer-events: none;
   z-index: 11; }
 
-.contenedorCarrito.active {
+.fondo-carrito.active {
   opacity: 1;
   visibility: visible;
   pointer-events: unset; }
@@ -7550,7 +7550,7 @@ body {
   #botonMenu:hover {
     transform: scale(1.2, 1.2); }
 
-.contenedor-menu {
+.fondo-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -7563,7 +7563,7 @@ body {
   pointer-events: none;
   z-index: 10; }
 
-.menu {
+.contenedor-menu {
   background-color: #fff;
   width: 400px;
   height: 100%;
@@ -7575,15 +7575,15 @@ body {
   transition: 1s ease;
   transition-property: left; }
   @media only screen and (max-width: 767px) {
-    .menu {
+    .contenedor-menu {
       width: 350px; } }
 
-.contenedor-menu.active {
+.fondo-menu.active {
   opacity: 1;
   visibility: visible;
   pointer-events: unset; }
 
-.menu.active {
+.contenedor-menu.active {
   left: 0; }
 
 .cerrarMenu {

@@ -1,3 +1,5 @@
+// Funcion para mostrar los productos en el HTML:
+
 function mostrarProductos(productos, contenedor) {
 	for (const producto of productos) {
 		$(contenedor).append(`<div class="col-lg-4 col-xs-12 contenedor-cards">
@@ -28,9 +30,10 @@ function mostrarProductos(productos, contenedor) {
 }
 
 
+// Función para agregar los productos al carrito de compras:
+
 function agregarAlCarrito(id) {
 	let repetido = carrito.find(productoR => productoR.id == id);
-
 	if (repetido){
 		repetido.cantidad = repetido.cantidad + 1;
 		$(`#cantidad${repetido.id}`).html(`${repetido.cantidad} ${repetido.pesaje}`);
@@ -48,6 +51,8 @@ function agregarAlCarrito(id) {
 	localStorage.setItem("Carrito", JSON.stringify(carrito));
 }
 
+
+// Función para mostrar los productos en el carrito de compras:
 
 function mostrarCarrito(productos){
 	$("#carrito").empty();
@@ -71,6 +76,7 @@ function mostrarCarrito(productos){
 										</div>
 									</div>
 								</div>`)
+
 		$(`#restar${producto.id}`).click(function() {
 			let restado = carrito.find(prodRes => prodRes.id == producto.id);
 			if(restado.cantidad > 1){
@@ -81,6 +87,7 @@ function mostrarCarrito(productos){
 				localStorage.setItem("Carrito", JSON.stringify(carrito));
 			}
 		})
+
 		$(`#sumar${producto.id}`).click(function() {
 			let sumado = carrito.find(prodSum => prodSum.id == producto.id);
 			sumado.cantidad = sumado.cantidad +1;
@@ -89,6 +96,7 @@ function mostrarCarrito(productos){
 			actualizarCarrito();
 			localStorage.setItem("Carrito", JSON.stringify(carrito));
 		})
+
 		$(`#eliminar${producto.id}`).click(function() {
 			$(this).parent().parent().parent().remove();
 			carrito = carrito.filter(prodE => prodE.id != producto.id);
@@ -106,6 +114,8 @@ function mostrarCarrito(productos){
 }
 
 
+// Función para actualizar contador de productos en carrito y precio total:
+
 function actualizarCarrito() {
     $("#contador-carrito").text(carrito.reduce((acc, element) => acc + element.cantidad, 0));
     let sumaTotal = carrito.reduce((acc , element) => acc + (element.precio2 * element.cantidad),0);
@@ -114,13 +124,15 @@ function actualizarCarrito() {
 }
     
 
+// Función para buscar productos:
+
 function buscar(event) {
     event.preventDefault();
     let textoIngresado = event.target.value.toLowerCase();
-    let buscados = stockProductos.filter(prod => prod.nombre.toLowerCase().includes(textoIngresado));
+    let buscados = stockProductos.filter(prodB => prodB.nombre.toLowerCase().includes(textoIngresado));
     $("#contenedor-slider, #contenedor-categorias, #contenedor-selector, #contenedor-productos").empty();
-	$(".menu").removeClass("active");
 	$(".contenedor-menu").removeClass("active");
+	$(".fondo-menu").removeClass("active");
     mostrarProductos(buscados, $("#contenedor-productos"));
 	console.log(buscados)
     if (textoIngresado == "" || buscados.length == 0){
@@ -132,17 +144,21 @@ function buscar(event) {
 }
 
 
+// Función para recuperar productos del Local Storage:
+
 function recuperar() {
     let productoGuardar = JSON.parse(localStorage.getItem("Carrito"));
     if (productoGuardar){
-    	for (const producto of productoGuardar) {
-			carrito.push(producto)
+    	for (const guardado of productoGuardar) {
+			carrito.push(guardado)
 		}
 		mostrarCarrito(productoGuardar);
 		actualizarCarrito();
  	}
 }
      
+
+// Función para enviar productos mediante un post y finalizar la compra:
 
 function finalizarCompra() {
 	$.post("https://jsonplaceholder.typicode.com/posts",JSON.stringify(carrito),function(respuesta,estado) {
@@ -161,6 +177,8 @@ function finalizarCompra() {
   }
 
 
+// Función para modificar carrito en caso de no haber productos agregados: 
+  
 function carritoVacio(){
 	if(carrito == 0){
 		$("#carrito").append(`<p class="text-center">El carrito de compras está vacío</p>`)
@@ -169,6 +187,8 @@ function carritoVacio(){
 	}
 }
   
+
+// Función para validad formulario de compra:
 
 function validar() {
 	$(".error").hide();
@@ -181,25 +201,25 @@ function validar() {
 	let localidad = $("#localidad").val().trim();
 	let direccion = $("#direccion").val().trim();
 	
-	if (nombre.length == 0 ){
+	if (nombre.length == 0){
 		$("#error-nombre").show();
 	};
-	if (apellido.length == 0 ){
+	if (apellido.length == 0){
 		$("#error-apellido").show();
 	};
-	if (email.length == 0 ){
+	if (email.length == 0){
 		$("#error-email").show();	
 	};
-	if (telefono.length === 0){
+	if (telefono.length == 0){
 		$("#error-telefono").show();	
 	};
 	if (tarjeta.length == 0){
 		$("#error-tarjeta").show();	
 	};
-	if (localidad.length == 0 ){
+	if (localidad.length == 0){
 		$("#error-localidad").show();	
 	};
-	if (direccion.length == 0 ){
+	if (direccion.length == 0){
 		$("#error-direccion").show();
 	};
 	if (nombre.length > 0 && apellido.length > 0 && email.length > 0 && telefono.length >= 0 && tarjeta.length > 0 && localidad.length > 0 && direccion.length > 0) {

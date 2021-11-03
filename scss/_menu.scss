@@ -10,7 +10,7 @@
 	}
 }
 
-.contenedor-menu {
+.fondo-menu {
 	position: fixed;
 	top: 0;
     left: 0;
@@ -24,7 +24,7 @@
 	z-index: 10;
 }
 
-.menu{
+.contenedor-menu{
     background-color: #fff;
     width: 400px;
     height: 100%;
@@ -40,13 +40,13 @@
  	}
 }
 
-.contenedor-menu.active {
+.fondo-menu.active {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: unset;
 }
 
-.menu.active {
+.contenedor-menu.active {
 	left: 0;
 }
 

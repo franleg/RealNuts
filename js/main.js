@@ -7,34 +7,41 @@ $(document).ready(function(){
 
     $(".error").hide();
 
-    $("#botonConfirmar").on('click',function(){
-        console.log('form');
-        validar()   
-    });
-
-    $("#botonCarrito").click(function(){
-        $(".contenedor-carrito").addClass("active");
-        $(".contenedorCarrito").addClass("active");
-    });
-
-    $(".cerrar-carrito").click(function(){
-        $(".contenedor-carrito").removeClass("active");
-        $(".contenedorCarrito").removeClass("active");
-    });
-
     $("#botonMenu").click(function(){
-        $(".menu").addClass("active");
         $(".contenedor-menu").addClass("active");
+        $(".fondo-menu").addClass("active");
     });
 
     $(".cerrarMenu").click(function(){
-        $(".menu").removeClass("active");
         $(".contenedor-menu").removeClass("active");
+        $(".fondo-menu").removeClass("active");
     });
 
     $(".menu-productos").click(function(){
         $(".lista-productos").slideToggle(500);
         $(".flecha").toggleClass("rotar");
+    });
+
+    $(".menu-productos").click(function(e) {
+        e.preventDefault();
+    });
+
+    $("#contacto").click(function(e) {
+        e.preventDefault();
+        $(".contenedor-menu").removeClass("active");
+        $(".fondo-menu").removeClass("active");
+        $("html, body").animate({
+            scrollTop: $("#contenedor-contacto").offset().top -8},2000);
+    });
+
+    $("#botonCarrito").click(function(){
+        $(".contenedor-carrito").addClass("active");
+        $(".fondo-carrito").addClass("active");
+    });
+
+    $(".cerrar-carrito").click(function(){
+        $(".contenedor-carrito").removeClass("active");
+        $(".fondo-carrito").removeClass("active");
     });
 
     $("#select").change(function(){
@@ -46,14 +53,8 @@ $(document).ready(function(){
 
     $("#verMas").click(function(){
         $(".contenedor-carrito").removeClass("active"); 
-        $(".contenedorCarrito").removeClass("active");
+        $(".fondo-carrito").removeClass("active");
     })
-
-    $(".boton-modal").click(function(){
-        $(".contenedor-compra").removeClass("active");
-        $(".contenedorCarrito").removeClass("active");
-
-    });
 
     $("#botonIniciar").click(function(e) {
         e.preventDefault();
@@ -74,6 +75,16 @@ $(document).ready(function(){
         $("#verMas").show();
         $("#botonIniciar").show();
     })
+
+    $("#botonConfirmar").on('click',function(){
+        validar()   
+    });
+
+    $(".boton-modal").click(function(){
+        $(".contenedor-compra").removeClass("active");
+        $(".fondo-carrito").removeClass("active");
+
+    });
 
     carritoVacio();
 });
@@ -111,32 +122,32 @@ $(".item-producto").click(function(e) {
     console.log(productoLista);
     switch (productoLista) {
         case "Todos los productos":
-            $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
+            $(".fondo-menu").removeClass("active");
             $("html, body").animate({
                 scrollTop: $(".titulo").offset().top -8},2000)
             break;
         case "Frutos Secos":
-            $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
+            $(".fondo-menu").removeClass("active");
             $("html, body").animate({
                 scrollTop: $("#titulo-frutos").offset().top -75},2000)
             break;
         case "Chocolates":
-            $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
+            $(".fondo-menu").removeClass("active");
             $("html, body").animate({
                 scrollTop: $("#titulo-chocolates").offset().top -75},2000)
             break;
         case "Dulce de leche":
-            $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
+            $(".fondo-menu").removeClass("active");
             $("html, body").animate({
                 scrollTop: $("#titulo-dulces").offset().top -75},2000)
             break;
         case "Vinos":
-            $(".menu").removeClass("active");
             $(".contenedor-menu").removeClass("active");
+            $(".fondo-menu").removeClass("active");
             $("html, body").animate({
                 scrollTop: $("#titulo-vinos").offset().top -75},2000)
             break;
@@ -145,20 +156,6 @@ $(".item-producto").click(function(e) {
             console.log("error")
             break;
     }
-});
-
-
-$("#contacto").click(function(e) {
-    e.preventDefault();
-    $(".menu").removeClass("active");
-    $(".contenedor-menu").removeClass("active");
-    $("html, body").animate({
-        scrollTop: $("#contenedor-contacto").offset().top -8},2000);
-});
-
-
-$(".menu-productos").click(function(e) {
-    e.preventDefault();
 });
 
 
