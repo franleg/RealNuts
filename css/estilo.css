@@ -7206,7 +7206,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 24px; }
 
 body {
-  background: #f1f1f1;
+  background-image: url(../assets/img/fondo2.png) !important;
   height: 100%;
   width: 100%; }
 
