@@ -7393,7 +7393,8 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 11; }
+  z-index: 11;
+  transition-delay: 0.3s; }
 
 .fondo-carrito.active {
   opacity: 1;
@@ -7578,7 +7579,8 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 10; }
+  z-index: 10;
+  transition-delay: 0.3s; }
 
 .contenedor-menu {
   background-color: #fff;
