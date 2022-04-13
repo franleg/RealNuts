@@ -7208,7 +7208,10 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background-image: url(../assets/img/fondo2.png) !important;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .col-lg-12, .col-lg-6 {
   padding-left: 0;
