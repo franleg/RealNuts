@@ -2,7 +2,7 @@
 
 function mostrarProductos(productos, contenedor) {
 	for (const producto of productos) {
-		$(contenedor).append(`<div class="col-lg-4 col-xs-12 contenedor-cards">
+		$(contenedor).append(`<div class="col-lg-3 col-xs-6 contenedor-cards">
 									<div class="card card-productos">
 										<img src="${producto.img}" class="card-img-top img-cards img-fluid">
 										<div class="card-body text-center">

@@ -7206,7 +7206,9 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 24px; }
 
 body {
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  height: 100%;
+  width: 100%; }
 
 .col-lg-12, .col-lg-6 {
   padding-left: 0;
@@ -7305,9 +7307,10 @@ body {
   flex-wrap: nowrap; }
 
 .card-productos {
-  margin: 20px 40px 40px 40px;
+  margin: 20px 10px 40px 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease; }
+  transition: all 400ms ease;
+  border: none; }
   .card-productos:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); }
@@ -7330,12 +7333,26 @@ body {
     .card-productos .botonCarrito:hover {
       transform: scale(1.2, 1.2);
       color: seagreen; }
+  .card-productos .img-cards {
+    width: 90%;
+    margin: auto; }
 
 .loader {
   margin: 78px; }
 
 .card-body {
   padding: 0px; }
+
+@media only screen and (max-width: 768px) {
+  .card-productos {
+    margin: 20px;
+    padding: 10px; }
+    .card-productos .img-cards {
+      margin: auto;
+      margin-top: 5px; }
+  .card-title {
+    font-size: 18px !important;
+    padding-top: 8px !important; } }
 
 .boton {
   background: #fff;

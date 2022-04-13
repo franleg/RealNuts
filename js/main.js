@@ -17,6 +17,15 @@ $(document).ready(function(){
         $(".fondo-menu").removeClass("active");
     });
 
+    $(".fondo-menu").click(function(){
+        $(".contenedor-menu").removeClass("active");
+        $(".fondo-menu").removeClass("active");
+    });
+
+    $(".contenedor-menu").click(function(e){
+        e.stopPropagation();
+    })
+
     $(".menu-productos").click(function(){
         $(".lista-productos").slideToggle(500);
         $(".flecha").toggleClass("rotar");
@@ -43,6 +52,15 @@ $(document).ready(function(){
         $(".contenedor-carrito").removeClass("active");
         $(".fondo-carrito").removeClass("active");
     });
+
+    $(".fondo-carrito").click(function(){
+        $(".contenedor-carrito").removeClass("active");
+        $(".fondo-carrito").removeClass("active");
+    });    
+
+    $(".contenedor-carrito").click(function(e){
+        e.stopPropagation();
+    })
 
     $("#select").change(function(){
         let ir = $(this).val()
